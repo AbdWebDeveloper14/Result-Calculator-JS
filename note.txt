@@ -1,0 +1,21 @@
+ALL Code =======>>>>>>>
+
+
+function calculate(){
+    let stdName = document.getElementById("stdName1").value;
+    let paper1 = document.getElementById("paper1").value;
+    let paper2 = document.getElementById("paper2").value;
+
+    let suming = `${Number(paper1) + Number(paper2)}`
+    let result = suming / 200
+
+    if ( result >= 30/100 ) {
+        console.log(`Congratulations ${stdName}, You are Pass!`);
+        alert(`Congratulations ${stdName}, You are Pass!`)
+    }else{
+        console.log(`Sorry ${stdName}, You are Fail!`);
+        alert(`Sorry ${stdName}, You are Fail!`)
+    }
+
+    document.getElementById("output1").innerHTML = `hello ${stdName}, Your Total Marks is ${suming} and Your Percentage is ${result * 100}%`
+}

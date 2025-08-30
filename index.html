@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Checking </title>
+
+    <style>
+        body{
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(17, 17, 17);
+        }
+
+        .container{
+            background-color: white;
+            width: auto;
+            max-width: 350px;
+            height: auto;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(63, 63, 63, 0.5);
+        }
+        .container:hover{
+        box-shadow: 2px 7px 60px 0px rgba(255,255,255,0.75);
+-webkit-box-shadow: 2px 7px 60px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: 2px 7px 60px 0px rgba(34, 6, 6, 0.75);
+cursor: pointer;
+transition: 0.5s;
+transform: scale(1.02);
+rotate: -1deg;
+}
+        
+.stdname{
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgb(17, 17, 17);
+    font-size: 16px;
+    
+}
+
+.paper1{
+    padding: 10px;  
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgb(17, 17, 17);
+    font-size: 16px;
+}
+        .btn{
+            padding: 15px 40px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(27, 27, 27);
+            color: white;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(0, 0, 0);
+        }
+        .output1{
+            font-size: 20px;
+            font-weight: bold;
+            background-color: rgb(214, 214, 214);
+            height: 20px;
+        }
+        
+
+        </style>
+</head>
+<body>
+<!-- 
+    <input type="text" id="stdName" placeholder="Student Name"> <br>
+    <button onclick="greet()">Submit</button>
+    <p class="" id="output"></p>
+    
+    <br>
+    <br>
+    <br>
+     -->
+     
+     <div class="container">
+         <input type="text" class="stdname" id="stdName1" placeholder="Student Name" required> <br><br>
+         <input type="text" class="paper1" id="paper1" placeholder="Paper 1" required> <br><br>
+         <input type="text" class="paper1" id="paper2" placeholder="Paper 2" required> <br><br>
+         <button onclick="calculate()" class="btn" aria-required="true">Calculate</button><br>
+         <p class="output" id="output1"></p>
+        </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
